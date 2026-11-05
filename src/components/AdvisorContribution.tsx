@@ -100,7 +100,7 @@ function useAdvisorContributionOption({
   metric,
   theme,
 }: {
-  result: import('/Users/xuchao/Desktop/codex/dataall/marketing-react/src/hooks/useResource').Resource<ContributionPage>;
+  result: import('../hooks/useResource').Resource<ContributionPage>;
   name: string;
   unit: '人' | '套';
   metric: string;
