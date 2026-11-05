@@ -1,0 +1,1 @@
+import{j as s}from"./index-SINoFgwF.js";function c({title:n,description:a,actions:e,children:i,className:l=""}){return s.jsxs("section",{className:`analysis-panel ${l}`,children:[n&&s.jsxs("div",{className:"panel-heading",children:[s.jsxs("div",{children:[s.jsx("h2",{children:n}),a&&s.jsx("p",{children:a})]}),e]}),i]})}export{c as A};
