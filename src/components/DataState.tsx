@@ -19,6 +19,7 @@ export function DataState({ loading, error, empty, retry, children }: Props) {
   if (error)
     return (
       <Alert
+        className="data-state-error"
         type="error"
         showIcon
         message="数据加载失败"

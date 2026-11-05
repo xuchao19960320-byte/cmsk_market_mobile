@@ -6,6 +6,9 @@ export function apiUrl(path: string, query: Query): string {
 }
 export async function request<T>(path: string, query: Query, signal?: AbortSignal): Promise<T> {
   const response = await fetch(apiUrl(path, query), { signal });
+  if (!response.headers.get('content-type')?.includes('application/json')) {
+    throw new Error('数据接口未返回 JSON，请检查 Pages Functions 是否已部署。');
+  }
   if (!response.ok) {
     const error = (await response.json()) as { message?: string };
     throw new Error(error.message || '数据加载失败');

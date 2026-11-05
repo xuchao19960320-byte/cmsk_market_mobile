@@ -62,3 +62,6 @@
   .comparison-sort-fields > span { flex-shrink: 0; }
   .comparison-sort-toolbar > :last-child { margin-left: auto; }
 }
+@layer components {
+  .page-content > .data-state-error { grid-column: 1 / -1; min-width: 0; }
+}
