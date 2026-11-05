@@ -1,0 +1,109 @@
+@layer components {
+  .helper-text {
+    font-size: var(--font-size-caption);
+    color: var(--color-muted);
+  }
+  .summary-strip {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    border: 1px solid var(--color-line);
+    border-radius: 6px;
+    background: var(--color-primary-soft);
+    margin-bottom: 16px;
+  }
+  .summary-strip > div {
+    padding: 12px;
+    border-right: 1px solid var(--color-line);
+  }
+  .summary-strip strong {
+    display: block;
+    font-size: var(--font-size-section);
+    color: var(--color-primary);
+    margin-top: 5px;
+  }
+  .content-detail {
+    width: min(100%, 1200px);
+    margin: auto;
+  }
+  .page-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .task-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .task-card {
+    border: 1px solid var(--color-line);
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .chart-detail {
+    padding: 12px 0;
+  }
+  .chart-detail > div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-line);
+    padding: 9px;
+    gap: 15px;
+  }
+  .chart-tooltip-heading {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .plot-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+  .section-gap {
+    margin-top: 20px;
+  }
+  .numeric {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+  .chip-legend {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .color-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--linked-color, var(--color-primary));
+  }
+  .app-footer {
+    padding: 0 28px 24px;
+    color: var(--color-muted);
+    font-size: var(--font-size-caption);
+  }
+  @media (max-width: 1450px) {
+    .supply-grid {
+      overflow-x: auto;
+    }
+    .metric-value {
+      font-size: var(--font-size-title);
+    }
+    .axis-select {
+      width: 225px;
+    }
+    .channel-mix {
+      grid-template-columns: 170px minmax(0, 1fr);
+    }
+    .summary-strip {
+      overflow: auto;
+      grid-template-columns: repeat(7, minmax(140px, 1fr));
+    }
+  }
+}

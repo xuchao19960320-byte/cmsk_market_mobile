@@ -1,0 +1,48 @@
+@layer components {
+  .accent-0 {
+    --linked-color: var(--color-teal);
+  }
+  .accent-1 {
+    --linked-color: var(--color-yellow);
+  }
+  .accent-2 {
+    --linked-color: var(--color-gray);
+  }
+  .accent-3 {
+    --linked-color: var(--color-blue);
+  }
+  .accent-4 {
+    --linked-color: var(--color-coral);
+  }
+  .accent-5 {
+    --linked-color: var(--color-cyan);
+  }
+  .accent-6 {
+    --linked-color: var(--color-purple);
+  }
+  .selected-channel {
+    background: var(--color-primary-soft);
+    cursor: pointer;
+  }
+  .theme-switching {
+    color: var(--color-primary);
+  }
+  .property-0 {
+    --linked-color: var(--color-property-home);
+  }
+  .property-1 {
+    --linked-color: var(--color-property-shop);
+  }
+  .property-2 {
+    --linked-color: var(--color-property-apartment);
+  }
+  .property-3 {
+    --linked-color: var(--color-property-office);
+  }
+  .property-4 {
+    --linked-color: var(--color-property-parking);
+  }
+  .property-5 {
+    --linked-color: var(--color-property-other);
+  }
+}

@@ -1,0 +1,175 @@
+@layer components {
+  .app-shell {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    min-width: 1280px;
+    overflow: hidden;
+  }
+  .app-header {
+    height: 68px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-line);
+  }
+  .app-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: var(--font-size-section);
+    font-weight: 600;
+  }
+  .brand-icon {
+    width: 38px;
+    height: 38px;
+    background: var(--color-primary);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    color: var(--color-surface);
+  }
+  .brand-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+  .app-header nav {
+    display: flex;
+    gap: 28px;
+    align-self: stretch;
+  }
+  .app-header nav a {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+    color: var(--color-muted);
+  }
+  .app-header nav a.active {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+  .app-scroll {
+    flex: 1;
+    overflow: auto;
+    min-height: 0;
+  }
+  .page-content {
+    padding: 24px 28px 36px;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 24px;
+  }
+  .page-content > section,
+  .page-content > .page-banner {
+    grid-column: 1/-1;
+  }
+  .filter-bar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 28px;
+    border-bottom: 1px solid var(--color-line);
+    background: var(--color-surface);
+  }
+  .filter-org {
+    width: 240px;
+  }
+  .filter-caliber {
+    width: 150px;
+  }
+  .filter-right {
+    margin-left: auto;
+    color: var(--color-muted);
+    font-size: var(--font-size-caption);
+  }
+  .analysis-panel {
+    min-width: 0;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-panel);
+    background: var(--color-surface);
+    padding: var(--space-panel);
+  }
+  .panel-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .panel-heading p {
+    margin: 8px 0 0;
+    color: var(--color-muted);
+    font-size: var(--font-size-caption);
+  }
+  .metric-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .metric-card {
+    padding: 20px;
+    border: 1px solid var(--color-line);
+    border-top: 3px solid var(--metric-accent, var(--color-primary));
+    border-radius: var(--radius-panel);
+    background: var(--color-surface);
+    min-height: 204px;
+    display: flex;
+    flex-direction: column;
+  }
+  .metric-card.leads {
+    --metric-accent: var(--color-stage-leads);
+  }
+  .metric-card.visits {
+    --metric-accent: var(--color-stage-visits);
+  }
+  .metric-card.buy {
+    --metric-accent: var(--color-stage-buy);
+  }
+  .metric-card.sign {
+    --metric-accent: var(--color-stage-sign);
+  }
+  .metric-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 20px 0;
+  }
+  .metric-label {
+    color: var(--color-muted);
+    font-size: var(--font-size-caption);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .metric-value {
+    font-size: var(--font-size-metric);
+    font-weight: 600;
+    color: var(--metric-accent);
+    white-space: nowrap;
+  }
+  .metric-value small {
+    font-size: var(--font-size-caption);
+    color: var(--color-muted);
+    font-weight: 400;
+    margin-left: 4px;
+  }
+  .metric-footer {
+    font-size: var(--font-size-caption);
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: auto;
+    color: var(--color-muted);
+  }
+  .metric-footer b {
+    color: var(--metric-accent);
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,64 @@
+:root {
+  /* 原型已有：主蓝、业态与渠道配色、背景和边框。 */
+  --color-primary: #2174ff;
+  --color-canvas: #f4f6fa;
+  --color-surface: #ffffff;
+  --color-ink: #23334c;
+  --color-muted: #8290a3;
+  --color-line: #e1e8f2;
+  --color-teal: #20c1a1;
+  --color-yellow: #fac343;
+  --color-gray: #cbd5e1;
+  --color-blue: #347bff;
+  --color-coral: #ff9c7b;
+  --color-cyan: #32b9ed;
+  --color-purple: #a386ee;
+  --color-property-home: #29a3ff;
+  --color-property-shop: #fac644;
+  --color-property-apartment: #58ce7b;
+  --color-property-office: #ff757c;
+  --color-property-parking: #16bfb5;
+  --color-property-other: #c8a5e8;
+  --color-stage-leads: #3e82ec;
+  --color-stage-visits: #34abc6;
+  --color-stage-buy: #6375d7;
+  --color-stage-sign: #9771ca;
+  /* 派生：浅色交互背景、九宫格区间及选中轨迹。 */
+  --color-primary-soft: #eef5ff;
+  --color-positive: #2ca484;
+  --color-danger: #d5687b;
+  --color-zone-low: #fff4f6;
+  --color-zone-mid: #fffaf0;
+  --color-zone-high: #f0faf6;
+  --color-track: #8754ec;
+  --color-shadow: #23334c14;
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    'Source Han Sans SC', 'Noto Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', sans-serif;
+  --font-size-caption: 12px;
+  --font-size-body: 14px;
+  --font-size-section: 16px;
+  --font-size-title: 24px;
+  --font-size-metric: 28px;
+  --line-body: 1.5;
+  --line-table: 1.4;
+  --line-heading: 1.3;
+  --radius-panel: 10px;
+  --space-panel: 24px;
+  --space-gap: 20px;
+}
+[data-theme='dark'] {
+  /* 派生：复用语义 token 的深色模式。 */
+  --color-primary: #79aaff;
+  --color-canvas: #111b2a;
+  --color-surface: #1b293b;
+  --color-ink: #e1e9f7;
+  --color-muted: #a2b2c9;
+  --color-line: #34445a;
+  --color-primary-soft: #243a5c;
+  --color-zone-low: #412c36;
+  --color-zone-mid: #3c382b;
+  --color-zone-high: #243d38;
+  --color-gray: #65758d;
+  --color-shadow: #00000033;
+}
